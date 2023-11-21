@@ -20,7 +20,6 @@ class Car(models.Model):
     interior_color = models.TextField(default='N/A')
     year = models.IntegerField()
     photo_test_main = models.TextField(default='N/A')
-    main_photo = models.ImageField(upload_to='taciki/', default='default_photo.jpg')
     video_photo = models.TextField(default='https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1024px-YouTube_full-color_icon_%282017%29.svg.png')
     video_link = models.TextField(default='<iframe width="1029" height="579" src="https://www.youtube.com/embed/BcJN9JGaYFQ" title="1977 CHEVROLET K20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>')
 
