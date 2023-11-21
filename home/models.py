@@ -25,8 +25,7 @@ class Car(models.Model):
     video_link = models.TextField(default='<iframe width="1029" height="579" src="https://www.youtube.com/embed/BcJN9JGaYFQ" title="1977 CHEVROLET K20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>')
 
     def __str__(self):
-        return f"{self.brand} {self.model} {self.type}({self.year}) {self.engine}"
-
+        return f"{self.brand} {self.model} ({self.year}) - Price: {self.price}, Mileage: {self.mileage}, Color: {self.body_color}, Interior: {self.interior_color}, VIN: {self.vin}"
 
 
 class CarPhoto(models.Model):
